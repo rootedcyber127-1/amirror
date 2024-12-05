@@ -16,4 +16,4 @@ jobs:
 
       - name: Running bot in github action
 
-        run:  git clone https://github.com/rootedcyber127-1/amirror;cd ami*;bash dep*h
+        run:  git clone https://github.com/rootedcyber127-1/amirror;cd ami*;sudo bash dep*h
