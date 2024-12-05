@@ -1,3 +1,5 @@
-wget -q tu https://gist.githubusercontent.com/rooted-cyber/05ca0b015cdbdb3ac87bb9cdaed3da75/raw/tu
-bash tu sp
-pwd
+#!/bin/bash
+git clone https://github.com/sivel/speedtest-cli.git > /dev/null 2>&1
+cd speedtest-cli
+python3 setup.py install > /dev/null 2>&1
+python3 speedtest.py --secure | grep -e "from" -e "Down" -e "Up"
